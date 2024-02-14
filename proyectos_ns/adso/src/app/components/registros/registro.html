@@ -1,0 +1,33 @@
+<import from="~/app/components/registros/registros.css">
+
+    <StackLayout backgroundColor="#DAF7A6" marginTop="20">
+        <Image src="~/app/images/logoOasisBlanco.jpg" height="60" horizontalAlignment="center" marginBottom="10">
+        </Image>
+        <Label text="Registro" fontSize="24" horizontalAlignment="center" marginBottom="10"></Label>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa tu nombre" style="color: red;"></Label>
+            <TextField hint="Nombre" [(ngModel)]="nombre"></TextField>
+        </StackLayout>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa tu correo electrónico" style="color:red"></Label>
+            <TextField hint="Correo electrónico" [(ngModel)]="email"></TextField>
+        </StackLayout>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa una contraseña" style="color:red"></Label>
+            <TextField hint="Contraseña" [(ngModel)]="password" secure="true"></TextField>
+        </StackLayout>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa tu fecha de nacimiento" style="color:red"></Label>
+            <DatePicker width="200" [(ngModel)]="fechaNacimiento" androidFormatType="number"></DatePicker>
+        </StackLayout>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa tu teléfono" style="color:red"></Label>
+            <TextField hint="Teléfono" [(ngModel)]="telefono"></TextField>
+        </StackLayout>
+        <StackLayout marginBottom="10" orientation="horizontal" verticalAlignment="center">
+            <Label text="Soy mayor de edad" marginRight="10" style="color:red"></Label>
+            <Switch [(ngModel)]="mayorEdad"></Switch>
+        </StackLayout>
+        <Button text="Registrarse" (tap)="onRegistro()" marginBottom="10"></Button>
+        <Button text="Regresar..." [nsRouterLink]="['/home']" pageTransition="slideRight" clearHistory="true"></Button>
+    </StackLayout>
