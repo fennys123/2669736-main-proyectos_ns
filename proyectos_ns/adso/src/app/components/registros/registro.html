@@ -19,8 +19,8 @@
             </StackLayout>
             <StackLayout marginBottom="10">
                 <Label text="Ingresa tu fecha de nacimiento" style="color:red"></Label>
-                <DatePicker [(ngModel)]="fechaNacimiento" dateFormat="yyyy-MMM-dd"></DatePicker>
-            </StackLayout>
+                <DatePicker [(ngModel)]="fechaNacimiento" dateFormat="yyyy-MMM-dd" androidMode="spinner"></DatePicker>
+            </StackLayout>            
             <StackLayout marginBottom="10">
                 <Label text="Ingresa tu teléfono" style="color:red"></Label>
                 <TextField hint="Teléfono" [(ngModel)]="telefono"></TextField>
