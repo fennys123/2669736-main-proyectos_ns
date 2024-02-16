@@ -9,6 +9,12 @@ import { Router } from '@angular/router';
     styleUrls: ['./registro.css']
 })
 export class RegistrosComponent implements OnInit {
+    nombre: string;
+    email: string;
+    password: string;
+    fechaNacimiento: Date;
+    telefono: string;
+    mayorEdad: boolean;
 
     constructor(private router: Router) {
         // Use the component constructor to inject providers.
@@ -16,5 +22,9 @@ export class RegistrosComponent implements OnInit {
     }
     public ngOnInit(): void {
 
+    }
+
+    onRegistro(): void {
+        this.router.navigate(["/index"]);
     }
 }

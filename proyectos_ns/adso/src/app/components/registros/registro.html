@@ -1,4 +1,8 @@
 <import from="~/app/components/registros/registros.css">
+    
+    <ActionBar>
+        <Label text="OASIS"></Label>
+    </ActionBar>
 
     <ScrollView>
         <StackLayout backgroundColor="#DAF7A6" marginTop="20">
@@ -20,7 +24,7 @@
             <StackLayout marginBottom="10">
                 <Label text="Ingresa tu fecha de nacimiento" style="color:red"></Label>
                 <DatePicker [(ngModel)]="fechaNacimiento" dateFormat="yyyy-MMM-dd" androidMode="spinner"></DatePicker>
-            </StackLayout>            
+            </StackLayout>
             <StackLayout marginBottom="10">
                 <Label text="Ingresa tu teléfono" style="color:red"></Label>
                 <TextField hint="Teléfono" [(ngModel)]="telefono"></TextField>
@@ -30,7 +34,8 @@
                 <Switch [(ngModel)]="mayorEdad"></Switch>
             </StackLayout>
             <Button text="Registrarse" (tap)="onRegistro()" marginBottom="10"></Button>
-            <Button text="Regresar..." [nsRouterLink]="['/home']" pageTransition="slideRight" clearHistory="true"></Button>
+            <Button text="Regresar..." [nsRouterLink]="['/home']" pageTransition="slideRight"
+                clearHistory="true"></Button>
+
         </StackLayout>
     </ScrollView>
-    

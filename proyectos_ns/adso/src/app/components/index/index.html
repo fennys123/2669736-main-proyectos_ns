@@ -1,0 +1,12 @@
+<ActionBar>
+    <Label text="OASIS"></Label>
+</ActionBar>
+
+<ScrollView>
+    <StackLayout>
+        <Label text="¡Bienvenido a mi aplicación!" class="title"></Label>
+        <Button text="volver a home" [nsRouterLink]="['/home']" pageTransition="slideRight"
+            clearHistory="true"></Button>
+        <Button text="Ir a tienda" [nsRouterLink]="['/tienda']" pageTransition="slideRight" clearHistory="true"></Button>
+    </StackLayout>
+</ScrollView>

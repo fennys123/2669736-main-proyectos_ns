@@ -5,6 +5,7 @@ import { ProductosComponent } from "./components/productos/productos";
 import { EventosComponent } from "./components/eventos/eventos";
 import { CategoriasComponent } from "./components/categorias/categorias";
 import { RegistrosComponent } from "./components/registros/registro";
+import { IndexComponent } from "./components/index/index";
 
 export const appRoutes: any = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ export const appRoutes: any = [
   { path: "reservas", component: ReservasComponent },
   { path: "categorias", component: CategoriasComponent },
   { path: "registros", component: RegistrosComponent },
+  { path: "index", component: IndexComponent, pathMatch: "full" }
 ];
 
 export const appComponents: any = [
@@ -25,4 +27,5 @@ export const appComponents: any = [
   EventosComponent,
   CategoriasComponent,
   RegistrosComponent,
+  IndexComponent,
 ];
