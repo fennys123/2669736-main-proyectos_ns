@@ -10,7 +10,6 @@ export class GaleriaComponent implements OnInit {
     public constructor(private router: Router) {
         // Use the component constructor to inject providers.
     }
-    ngOnInit(): void {
-        throw new Error('Method not implemented.');
+    public ngOnInit(): void {
     }
 }

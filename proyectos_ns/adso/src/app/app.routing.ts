@@ -6,7 +6,8 @@ import { EventosComponent } from "./components/eventos/eventos";
 import { CategoriasComponent } from "./components/categorias/categorias";
 import { RegistrosComponent } from "./components/registros/registro";
 import { IndexComponent } from "./components/index/index";
-import { LoginComponent} from "./components/login/login";
+import { LoginComponent } from "./components/login/login";
+import { GaleriaComponent } from "./components/galeria/galeria";
 
 export const appRoutes: any = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,7 +19,8 @@ export const appRoutes: any = [
   { path: "categorias", component: CategoriasComponent },
   { path: "registros", component: RegistrosComponent },
   { path: "index", component: IndexComponent, pathMatch: "full" },
-  { path: "login", component: LoginComponent},
+  { path: "login", component: LoginComponent },
+  { path: "galeria", component: GaleriaComponent},
 ];
 
 export const appComponents: any = [
