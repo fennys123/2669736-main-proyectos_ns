@@ -1,41 +1,40 @@
-<import from="~/app/components/registros/registros.css">
-    
-    <ActionBar>
-        <Label text="OASIS"></Label>
-    </ActionBar>
+<ActionBar>
+    <Label text="OASIS"></Label>
+</ActionBar>
 
-    <ScrollView>
-        <StackLayout backgroundColor="#DAF7A6" marginTop="20">
-            <Image src="~/app/images/logoOasisBlanco.jpg" height="60" horizontalAlignment="center" marginBottom="10">
-            </Image>
-            <Label text="Registro" fontSize="24" horizontalAlignment="center" marginBottom="10"></Label>
-            <StackLayout marginBottom="10">
-                <Label text="Ingresa tu nombre" style="color: red;"></Label>
-                <TextField hint="Nombre" [(ngModel)]="nombre"></TextField>
-            </StackLayout>
-            <StackLayout marginBottom="10">
-                <Label text="Ingresa tu correo electrónico" style="color:red"></Label>
-                <TextField hint="Correo electrónico" [(ngModel)]="email"></TextField>
-            </StackLayout>
-            <StackLayout marginBottom="10">
-                <Label text="Ingresa una contraseña" style="color:red"></Label>
-                <TextField hint="Contraseña" [(ngModel)]="password" secure="true"></TextField>
-            </StackLayout>
-            <StackLayout marginBottom="10">
-                <Label text="Ingresa tu fecha de nacimiento" style="color:red"></Label>
-                <DatePicker [(ngModel)]="fechaNacimiento" dateFormat="yyyy-MMM-dd" androidMode="spinner"></DatePicker>
-            </StackLayout>
-            <StackLayout marginBottom="10">
-                <Label text="Ingresa tu teléfono" style="color:red"></Label>
-                <TextField hint="Teléfono" [(ngModel)]="telefono"></TextField>
-            </StackLayout>
-            <StackLayout marginBottom="10" orientation="horizontal" verticalAlignment="center">
-                <Label text="Soy mayor de edad" marginRight="10" style="color:red"></Label>
-                <Switch [(ngModel)]="mayorEdad"></Switch>
-            </StackLayout>
-            <Button text="Registrarse" (tap)="onRegistro()" marginBottom="10"></Button>
-            <Button text="Regresar..." [nsRouterLink]="['/home']" pageTransition="slideRight"
-                clearHistory="true"></Button>
-
+<ScrollView>
+    <StackLayout backgroundColor="#000000" marginTop="20" id="registros">
+        <Image src="~/app/images/logoOasisBlanco.jpg" height="60" horizontalAlignment="center" marginBottom="10">
+        </Image>
+        <Label text="Registro" fontSize="24" horizontalAlignment="center" marginBottom="10"
+            style="color: white;"></Label>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa tu nombre" style="color: white;"></Label>
+            <TextField hint="Nombre" [(ngModel)]="nombre"></TextField>
         </StackLayout>
-    </ScrollView>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa tu correo electrónico" style="color: white;"></Label>
+            <TextField hint="Correo electrónico" [(ngModel)]="email"></TextField>
+        </StackLayout>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa una contraseña" style="color: white;"></Label>
+            <TextField hint="Contraseña" [(ngModel)]="password" secure="true" style="color: white;"></TextField>
+        </StackLayout>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa tu fecha de nacimiento" style="color: white;"></Label>
+            <DatePicker [(ngModel)]="fechaNacimiento" dateFormat="yyyy-MMM-dd" androidMode="spinner"
+                class="picker datepicker"></DatePicker>
+        </StackLayout>
+        <StackLayout marginBottom="10">
+            <Label text="Ingresa tu teléfono" style="color:white;"></Label>
+            <TextField hint="Teléfono" [(ngModel)]="telefono"></TextField>
+        </StackLayout>
+        <StackLayout marginBottom="10" orientation="horizontal" verticalAlignment="center">
+            <Label text="Soy mayor de edad" marginRight="10" style="color: white;"></Label>
+            <Switch [(ngModel)]="mayorEdad"></Switch>
+        </StackLayout>
+        <Button text="Registrarse" (tap)="onRegistro()" marginBottom="10"></Button>
+        <Button text="Regresar..." [nsRouterLink]="['/home']" pageTransition="slideRight" clearHistory="true"></Button>
+        <Button text="Ir a iniciar sesión" (tap)="onLogin()" pageTransition="slideRight" clearHistory="true"></Button>
+    </StackLayout>
+</ScrollView>

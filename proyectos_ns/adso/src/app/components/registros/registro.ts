@@ -27,4 +27,8 @@ export class RegistrosComponent implements OnInit {
     onRegistro(): void {
         this.router.navigate(["/index"]);
     }
+
+    onLogin(): void {
+        this.router.navigate(["/login"]);
+    }
 }

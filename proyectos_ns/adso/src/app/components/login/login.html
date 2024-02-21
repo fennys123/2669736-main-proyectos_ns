@@ -1,0 +1,22 @@
+<ActionBar>
+    <Label text="OASIS"></Label>
+</ActionBar>
+
+<ScrollView>
+    <StackLayout backgroundColor="#000000" marginTop="30" id="login">
+        <Image src="~/app/images/logoOasisBlanco.jpg" height="60" horizontalAlignment="center" marginBottom="10">
+        </Image>
+        <Label text="Iniciar sesión" fontSize="24" horizontalAlignment="center" marginBottom="10"
+            style="color: white;"></Label>
+        <StackLayout marginBottom="10">
+            <Label text="Email o nombre de usuario" style="color: white;"></Label>
+            <TextField hint="Email o nombre de usuario" [(ngModel)]="email"></TextField>
+        </StackLayout>
+        <StackLayout marginBottom="10">
+            <Label text="Contraseña" style="color: white;"></Label>
+            <TextField hint="Contraseña" [(ngModel)]="password" secure="true" style="color: white;"></TextField>
+        </StackLayout>
+        <Button text="Iniciar sesión" (tap)="onLogin()" marginBottom="10"></Button>
+        <Button text="¿Olvidaste la contraseña?" (tap)="onForgotPassword()"></Button>
+    </StackLayout>
+</ScrollView>

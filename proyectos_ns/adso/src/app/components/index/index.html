@@ -2,11 +2,25 @@
     <Label text="OASIS"></Label>
 </ActionBar>
 
-<ScrollView>
-    <StackLayout>
+<ScrollView style="font-weight: bold;">
+    <StackLayout backgroundColor="#000000" marginTop="20" id="home">
         <Label text="¡Bienvenido a mi aplicación!" class="title"></Label>
-        <Button text="volver a home" [nsRouterLink]="['/home']" pageTransition="slideRight"
-            clearHistory="true"></Button>
-        <Button text="Ir a tienda" [nsRouterLink]="['/tienda']" pageTransition="slideRight" clearHistory="true"></Button>
+        <Image src="~/app/images/logoOasisBlanco.jpg" height="60" horizontalAlignment="center" marginBottom="10">
+        </Image>
+        <Label text="Bienvenidos a Oasis" fontSize="24" horizontalAlignment="center" marginBottom="10"
+            color="white"></Label>
+        <Label text="EST. 1987" fontSize="16" horizontalAlignment="center" marginBottom="10" color="white"></Label>
+        <Button text="Menú" nsRouterLink="/menu" pageTransition="slideRight" clearHistory="true"
+            marginBottom="10"></Button>
+        <Button text="Galería" nsRouterLink="/galeria" pageTransition="slideRight" clearHistory="true"
+            marginBottom="10"></Button>
+        <Button text="Reservar Ahora" nsRouterLink="/reservas" pageTransition="slideRight" clearHistory="true"
+            marginBottom="10"></Button>
+
+
+        <Button text="Registro" nsRouterLink="/registros" pageTransition="slideRight" clearHistory="true"
+            marginBottom="10"></Button>
+        <Button text="volver a home" nsRouterLink="/home" pageTransition="slideRight" clearHistory="true"></Button>
+        <Button text="Ir a tienda" nsRouterLink="/tienda" pageTransition="slideRight" clearHistory="true"></Button>
     </StackLayout>
 </ScrollView>

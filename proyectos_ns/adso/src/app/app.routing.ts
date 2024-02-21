@@ -6,6 +6,7 @@ import { EventosComponent } from "./components/eventos/eventos";
 import { CategoriasComponent } from "./components/categorias/categorias";
 import { RegistrosComponent } from "./components/registros/registro";
 import { IndexComponent } from "./components/index/index";
+import { LoginComponent} from "./components/login/login";
 
 export const appRoutes: any = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,7 +17,8 @@ export const appRoutes: any = [
   { path: "reservas", component: ReservasComponent },
   { path: "categorias", component: CategoriasComponent },
   { path: "registros", component: RegistrosComponent },
-  { path: "index", component: IndexComponent, pathMatch: "full" }
+  { path: "index", component: IndexComponent, pathMatch: "full" },
+  { path: "login", component: LoginComponent},
 ];
 
 export const appComponents: any = [
@@ -28,4 +30,5 @@ export const appComponents: any = [
   CategoriasComponent,
   RegistrosComponent,
   IndexComponent,
+  LoginComponent,
 ];
