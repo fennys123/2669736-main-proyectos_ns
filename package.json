@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nativescript-angular": "^10.0.0",
+    "nativescript-ui-listview": "^15.2.3"
+  }
+}

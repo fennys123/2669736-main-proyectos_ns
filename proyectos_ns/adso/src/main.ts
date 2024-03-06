@@ -3,6 +3,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NativeScriptRouterModule } from '@nativescript/angular';
 import { appComponents, appRoutes } from './app/app.routing';
+import '@angular/compiler';
 
 @NgModule({
   declarations: [AppComponent, ...appComponents],
@@ -18,4 +19,3 @@ class AppComponentModule {}
 
 
 platformNativeScriptDynamic().bootstrapModule(AppComponentModule)
-

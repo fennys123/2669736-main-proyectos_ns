@@ -1,0 +1,13 @@
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .ns-title {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
+        /* Otras propiedades de estilo específicas para dispositivos móviles si es necesario */
+    }
+    
+    .ns-description {
+        overflow: hidden; /* Oculta el texto que se desborda */
+        text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto se desborda */
+        white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+      }
+}

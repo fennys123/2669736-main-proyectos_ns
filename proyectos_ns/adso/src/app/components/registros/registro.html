@@ -4,7 +4,7 @@
 
 <ScrollView>
     <StackLayout backgroundColor="#000000" marginTop="20" id="registros">
-        <Image src="~/app/images/logoOasisBlanco.jpg" height="60" horizontalAlignment="center" marginBottom="10">
+        <Image src="~/app/images/logoOasisBlanco.jpg" height="60"  marginBottom="10">
         </Image>
         <Label text="Registro" fontSize="24" horizontalAlignment="center" marginBottom="10"
             style="color: white;"></Label>
@@ -22,8 +22,8 @@
         </StackLayout>
         <StackLayout marginBottom="10">
             <Label text="Ingresa tu fecha de nacimiento" style="color: white;"></Label>
-            <DatePicker [(ngModel)]="fechaNacimiento" dateFormat="yyyy-MMM-dd" androidMode="spinner"
-                class="picker datepicker"></DatePicker>
+            <DatePicker [(ngModel)]="fechaNacimiento" dateFormat="yyyy-MMM-dd" mode="spinner" class="date-picker">
+            </DatePicker>
         </StackLayout>
         <StackLayout marginBottom="10">
             <Label text="Ingresa tu teléfono" style="color:white;"></Label>

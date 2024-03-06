@@ -1,8 +1,9 @@
 <ActionBar title="Galería" />
 <ScrollView>
-    <StackLayout>
-        <Image src="~/app/images/descarga.png" stretch="aspectFill" margin="10"></Image>
-        <Image src="~/app/images/descarga.png" stretch="aspectFill" margin="10"></Image>
-        <!-- Agrega más imágenes o elementos de la galería aquí -->
+    <StackLayout backgroundColor="#000000" marginTop="20" id="galeria">
+        <Image src="~/app/images/logoOasisBlanco.jpg" height="60" horizontalAlignment="center" marginBottom="10" />
+        <Image src="~/app/images/descarga.png" height="1000" horizontalAlignment="center" marginBottom="10" />
+        <Image src="~/app/images/descarga.png" height="1000" horizontalAlignment="center" marginBottom="10" />
+        <Button text="Regresar..." (tap)="onRegresar()" pageTransition="slideRight" clearHistory="true"></Button>
     </StackLayout>
 </ScrollView>

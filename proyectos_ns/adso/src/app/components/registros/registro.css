@@ -2,16 +2,17 @@ bold {
   font-weight: bold;
 }
 
-.picker {
-  background-color: rgb(229, 235, 229);
-  color: rgb(247, 243, 243) !important;
-  border-color: rgb(50, 243, 11);
-  border-radius: 20;
+.date-picker {
+  background-color: rgb(250, 252, 247);
   border-width: 2;
+  border-radius: 10;
+  color: rgb(238, 8, 8);
   vertical-align: middle;
-
 }
 
-  ScrollView {
+
+
+
+ScrollView {
   font-weight: bold;
 }
