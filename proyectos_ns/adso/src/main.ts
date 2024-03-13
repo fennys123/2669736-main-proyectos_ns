@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { NativeScriptRouterModule } from '@nativescript/angular';
 import { appComponents, appRoutes } from './app/app.routing';
 import '@angular/compiler';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, ...appComponents],
@@ -11,11 +12,12 @@ import '@angular/compiler';
   imports: [
     NativeScriptModule,
     NativeScriptRouterModule,
-    NativeScriptRouterModule.forRoot(appRoutes)
+    NativeScriptRouterModule.forRoot(appRoutes),
+    HttpClientModule,
   ],
   schemas: [NO_ERRORS_SCHEMA],
 })
-class AppComponentModule {}
+class AppComponentModule { }
 
 
 platformNativeScriptDynamic().bootstrapModule(AppComponentModule)
